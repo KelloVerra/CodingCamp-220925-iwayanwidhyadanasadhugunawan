@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pertama RevoU Mini Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css//style.css">
+</head>
+<body>
+    <nav>
+        <img src="a"/>
+        <div id="navigation">
+            <a>
+                Home
+            </a>
+            <a>
+                Our Profile
+            </a>
+            <a>
+                Portfolio
+            </a>
+            <a>
+                Contact Us
+            </a>
+        </div>
+    </nav>
+    <article>
+        <section>
+            <h1 id="headerGreet">Hi Guest, Welcome to the Website</h1>
+            <h2>Ini adalah website latihan pertama</h2>
+        </section>
+        <section>
+            <h1>Our Headquarter</h1>
+            <img src="a"/>
+        </section>
+        <section>
+            <h1>Contact Us</h1>
+            <form id="formContactUs">
+
+                <!-- nama -->
+                <label for="inputNama">Nama<span class="text-red-700">*</span></label>
+                <label id="inputNamaError" for="inputNama" class="hidden text-red-500">ERROR</label>
+                <input id="inputNama" class="border-2 border-blue-200 rounded-sm">
+
+                <!-- tanggal lahir -->
+                <label for="inputTglLhr">Tanggal Lahir<span class="text-red-700">*</span></label>
+                <label id="inputTglLhrError" for="inputTglLhr" class="hidden text-red-500">ERROR</label>
+                <input id="inputTglLhr" class="border-2 border-blue-200 rounded-sm" type="date">
+
+                <!-- jenis kelamin -->
+                <label>Jenis Kelamin<span class="text-red-700">*</span></label>
+                <label id="inputKelaminError" for="inputKelamin" class="hidden text-red-500">ERROR</label>
+                <label for="inputLaki">
+                    <input id="inputLaki" name="kelamin" type="radio" value="laki">
+                    Laki-Laki
+                </label>
+                <label for="inputPerempuan">
+                    <input id="inputPerempuan" name="kelamin" type="radio" value="perempuan">
+                    Perempuan
+                </label>
+
+                <!-- pesan -->
+                <label for="inputPesan">Pesan<span class="text-red-700">*</span></label>
+                <label id="inputPesanError" for="inputPesan" class="hidden text-red-500">ERROR</label>
+                <textarea id="inputPesan" class="border-2 border-blue-200 rounded-sm"></textarea>
+
+                <input onclick="validateContactUsForm()" type="button" class="block bg-blue-200 rounded-sm p-2 cursor-pointer" value="submit">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>By Yana</p>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
