@@ -5,6 +5,10 @@
     font-family: 'Inter', sans-serif;    
     accent-color: #6933FF;
 }
+body {
+    overflow-y: scroll;
+    overflow-x: none;
+}
 
 *::selection {
     background-color: #6933FF !important;

@@ -1,8 +1,8 @@
 
 var namaUser = "";
 document.addEventListener('DOMContentLoaded', function () {
-    namaUser = prompt('Masukkan nama anda: ','');
-    namaUser = namaUser.trim().length > 0 ? ` ${namaUser}` : '';
+    namaUser = prompt('Enter your name: ','');
+    namaUser = namaUser.trim().length > 0 ? ` ${namaUser}`.slice(0,25) : '';
     document.getElementById('headerGreet').innerHTML = `Hi${namaUser}, <br> Ready to <span class="text-[#6933FF]">Quantum-Enhance</span> your future?`;
 })
 
@@ -25,12 +25,12 @@ function validateContactUsForm() {
     let kelamin = document.querySelector('input[type=radio]:checked');
     let pesan = document.getElementById('inputPesan').value;
 
-    if(nama.trim().length == 0) errorElement('inputNamaError','Nama harus diisi');
-    if(tanggallahir.trim().length == 0) errorElement('inputTglLhrError','Tanggal Lahir harus diisi');
-    if(kelamin === null) errorElement('inputKelaminError','Jenis Kelamin harus diisi');
-    if(pesan.trim().length == 0) errorElement('inputPesanError','Pesan harus diisi');
+    if(nama.trim().length == 0) errorElement('inputNamaError','Name had to be filled');
+    if(tanggallahir.trim().length == 0) errorElement('inputTglLhrError','Birthdate had to be filled');
+    if(kelamin === null) errorElement('inputKelaminError','Gender had to be filled');
+    if(pesan.trim().length == 0) errorElement('inputPesanError','Message had to be filled');
 
     if(error) return;
 
-    alert(`Thanks for your feedback, ${nama}!`);
+    alert(`Thanks for your message, ${nama}!`);
 }
