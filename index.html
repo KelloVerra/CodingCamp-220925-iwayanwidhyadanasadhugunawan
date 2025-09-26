@@ -12,73 +12,127 @@
     <header class="absolute top-0 left-0 right-0 flex px-8 py-4">
         <img src="./assets/revoulogo.svg" width="45"/>
         <div class="ml-auto px-3 py-2 h-fit rounded-md border-[#6933FF] border-1 flex gap-5 justify-center" id="navigation">
-            <a class="text-md" href="#sectionHome">
+            <a class="text-md hover:text-[#6933FF]" href="#sectionHome">
                 Home
             </a>
-            <a class="text-md" href="#sectionProfile">
+            <a class="text-md hover:text-[#6933FF]" href="#sectionProfile">
                 Our Profile
             </a>
-            <a class="text-md" href="#sectionPortfolio">
+            <a class="text-md hover:text-[#6933FF]" href="#sectionPortfolio">
                 Portfolio
             </a>
-            <a class="text-md" href="#sectionContact">
+            <a class="text-md hover:text-[#6933FF]" href="#sectionContact">
                 Contact Us
             </a>
         </div>
     </header>
 
     <!-- main konten -->
-    <main class="flex flex-col px-24">
-        <section class="w-full h-[100vh] flex flex-col justify-center" id="sectionHome">
+    <main class="flex flex-col">
+        <!-- section home -->
+        <section class="w-full h-[100vh] px-24 flex flex-col justify-center" id="sectionHome">
             <h1 class="mt-15 text-5xl font-semibold tracking-normal w-[32rem] leading-14" id="headerGreet">Hi, <br> Ready to <span class="text-[#6933FF]">Quantum-Enhance</span> your future?</h1>
             <div class="w-fit">
                 <h2 class="text-md w-[28rem] my-8" ><span class="text-[#6933FF]">AetherLoop Technologies</span> is a cutting-edge tech company pioneering the future of immersive connectivity through quantum-powered communication and virtual presence systems.</h2>
                 <a class="block w-fit ml-auto py-1.5 px-10 font-semibold rounded-md border-[#6933FF] text-[#6933FF] border-[1.5px] hover:bg-[#6933FF] hover:text-[#fff] transition-all" href="#sectionPortfolio" >Learn More</a>
             </div>
         </section>
-        <section class="">
-            <h1>Our Headquarter</h1>
-            <img src="a"/>
+
+        <!-- section about -->
+        <section class="flex flex-col px-24 h-[100vh] bg-[#6933FF] text-white justify-center" id="sectionProfile">
+            <h1 class="opposite-sel mb-15 w-full text-center text-5xl font-semibold tracking-normal leading-14" id="headerGreet">“Beyond Distance. Beyond Time.”</h1>
+            <div class="w-full flex justify-center gap-10">
+                <div class="w-fit flex flex-col items-center">
+                    <img src="./assets/star.svg">
+                    <h1 class="opposite-sel mx-auto text-3xl font-semibold tracking-normal w-full text-center leading-14" id="headerGreet">Innovative</h1>
+                    <p class="opposite-sel w-[12rem] text-center">Innovating next-generation communication platforms that integrate quantum technologies.</p>
+                </div>
+                <div class="bg-white w-[1.25px] h-full"></div>
+                <div class="w-fit flex flex-col items-center">
+                    <img src="./assets/star.svg">
+                    <h1 class="opposite-sel mx-auto text-3xl font-semibold tracking-normal w-full text-center leading-14" id="headerGreet">Accessible</h1>
+                    <p class="opposite-sel w-[12rem] text-center">Empowering global communities with seamless access to real-time virtual presence, regardless of location.</p>
+                </div>
+                <div class="bg-white w-[1.25px] h-full"></div>
+                <div class="w-fit flex flex-col items-center">
+                    <img src="./assets/star.svg">
+                    <h1 class="opposite-sel mx-auto text-3xl font-semibold tracking-normal w-full text-center leading-14" id="headerGreet">Applicable</h1>
+                    <p class="opposite-sel w-[12rem] text-center">Bridging physical and digital worlds to redefine work, education, and human connection.</p>
+                </div>
+                <div class="bg-white w-[1.25px] h-full"></div>
+                <div class="w-fit flex flex-col items-center">
+                    <img src="./assets/star.svg">
+                    <h1 class="opposite-sel mx-auto text-3xl font-semibold tracking-normal w-full text-center leading-14" id="headerGreet">User-Friendly</h1>
+                    <p class="opposite-sel w-[12rem] text-center">Ensuring our technologies are developed with ethical frameworks, privacy protection, and sustainability in mind.</p>
+                </div>
+            </div>
+            <h2 class="opposite-sel mt-[5rem] w-full text-center font-semibold text-lg">Our Vision is to reshape how humanity connect, communicate, and collaborate <br> unbounded by physical limitations or temporal delays.</h2>
         </section>
-        <section id="sectionContact">
-            <h1>Contact Us</h1>
-            <form id="formContactUs">
+
+        <!-- section portfolio -->
+        <section class="flex flex-col px-24 h-[100vh] justify-center" id="sectionPortfolio">
+            <h1 class="w-fit text-5xl font-semibold tracking-normal leading-14 text-[#6933FF]" id="headerGreet">Portfolio:<br>Our Impact</h1>
+            <h2 class="mt-4 w-fit text-lg">
+                <span class="font-semibold">Our systems are already revolutionizing industries</span><br>
+                from remote healthcare and education to interplanetary communication.
+            </h2>
+            <div class="w-full">
+                <!-- photos -->
+            </div>
+        </section>
+
+        <!-- section contact us -->
+        <section class="flex flex-col px-24 h-[100vh] justify-center items-center" id="sectionContact">
+            <h1 class="w-fit text-5xl font-semibold tracking-normal leading-14 text-[#6933FF]">
+                Contact Us
+                <span class="text-sm font-normal text-black"><span class="text-red-500">* </span>mandatory</span>
+            </h1>
+            <form id="formContactUs" class="w-[32rem] flex flex-col gap-3">
 
                 <!-- input nama -->
-                <label for="inputNama">Nama<span class="text-red-700">*</span></label>
-                <label id="inputNamaError" for="inputNama" class="hidden text-red-500">ERROR</label>
-                <input id="inputNama" class="border-2 border-blue-200 rounded-sm">
+                <div>
+                    <label for="inputNama">Nama<span class="text-red-500">*</span></label>
+                    <label id="inputNamaError" for="inputNama" class="text-red-500 text-xs"></label>
+                    <input id="inputNama" class="text-input border-1 border-[#6933FF] w-full rounded-sm">
+                </div>
 
                 <!-- input tanggal lahir -->
-                <label for="inputTglLhr">Tanggal Lahir<span class="text-red-700">*</span></label>
-                <label id="inputTglLhrError" for="inputTglLhr" class="hidden text-red-500">ERROR</label>
-                <input id="inputTglLhr" class="border-2 border-blue-200 rounded-sm" type="date">
+                <div>
+                    <label for="inputTglLhr">Tanggal Lahir<span class="text-red-500">*</span></label>
+                    <label id="inputTglLhrError" for="inputTglLhr" class="text-red-500 text-xs"></label>
+                    <input id="inputTglLhr" class="text-input border-1 border-[#6933FF] w-full rounded-sm" type="date">
+                </div>
 
                 <!-- input jenis kelamin -->
-                <label>Jenis Kelamin<span class="text-red-700">*</span></label>
-                <label id="inputKelaminError" for="inputKelamin" class="hidden text-red-500">ERROR</label>
-                <label for="inputLaki">
-                    <input id="inputLaki" name="kelamin" type="radio" value="laki">
-                    Laki-Laki
-                </label>
-                <label for="inputPerempuan">
-                    <input id="inputPerempuan" name="kelamin" type="radio" value="perempuan">
-                    Perempuan
-                </label>
+                <div>
+                    <label>Jenis Kelamin<span class="text-red-500">*</span></label>
+                    <label id="inputKelaminError" for="inputKelamin" class="text-red-500 text-xs"></label>
+                    <br>
+                    <label for="inputLaki" class="mr-6">
+                        <input id="inputLaki" style="display: inline-block" name="kelamin" type="radio" value="laki">
+                        Laki-Laki
+                    </label>
+                    <label for="inputPerempuan">
+                        <input id="inputPerempuan" style="display: inline-block" name="kelamin" type="radio" value="perempuan">
+                        Perempuan
+                    </label>
+                </div>
 
                 <!-- input pesan -->
-                <label for="inputPesan">Pesan<span class="text-red-700">*</span></label>
-                <label id="inputPesanError" for="inputPesan" class="hidden text-red-500">ERROR</label>
-                <textarea id="inputPesan" class="border-2 border-blue-200 rounded-sm"></textarea>
+                <div>
+                    <label for="inputPesan">Pesan<span class="text-red-500">*</span></label>
+                    <label id="inputPesanError" for="inputPesan" class="text-red-500 text-xs"></label>
+                    <textarea id="inputPesan" class="text-input border-1 border-[#6933FF] w-full rounded-sm"></textarea>
+                </div>
 
-                <input onclick="validateContactUsForm()" type="button" class="block bg-blue-200 rounded-sm p-2 cursor-pointer" value="submit">
+                <input onclick="validateContactUsForm()" type="button" class="w-fit mx-auto block bg-[#6933FF] rounded-sm px-24 py-1.5 cursor-pointer text-white text-lg tracking-wide" value="Submit">
             </form>
         </section>
     </main>
 
     <!-- footer -->
-    <footer>
-        <p>By Yana</p>
+    <footer class="w-full h-[4rem] border-t-1 text-[#6933FF] border-[#6933FF] flex flex-col justify-center">
+        <p class="w-full text-center">&copy; 2025 I Wayan Widhyadana SG Practice, All rights reserved.</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>

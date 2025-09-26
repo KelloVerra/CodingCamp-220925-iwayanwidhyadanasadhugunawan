@@ -3,9 +3,24 @@
 
 * {
     font-family: 'Inter', sans-serif;    
+    accent-color: #6933FF;
 }
 
 *::selection {
     background-color: #6933FF !important;
     color: #fff !important;
+}
+
+.opposite-sel::selection {
+    background-color: #fff !important;
+    color: #6933FF !important;
+}
+
+input {
+    margin-top: .25rem;
+    display: block;
+}
+.text-input {
+    padding: 0 .25rem;
+    color: #6933FF;
 }
