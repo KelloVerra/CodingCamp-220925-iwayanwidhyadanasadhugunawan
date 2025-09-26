@@ -2,7 +2,7 @@
 var namaUser = "";
 document.addEventListener('DOMContentLoaded', function () {
     // namaUser = prompt('Masukkan nama anda: ','Guest');
-    document.getElementById('headerGreet').innerText = `Hi ${namaUser}, Welcome to the Website`;
+    // document.getElementById('headerGreet').innerText = `Hi ${namaUser}, Welcome to the Website`;
 })
 
 function validateContactUsForm() {

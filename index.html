@@ -8,47 +8,53 @@
     <link rel="stylesheet" href="./css//style.css">
 </head>
 <body>
-    <nav>
-        <img src="./revoulogo.svg"/>
-        <div id="navigation">
-            <a>
+    <!-- header /navbar -->
+    <header class="absolute top-0 left-0 right-0 flex px-8 py-4">
+        <img src="./assets/revoulogo.svg" width="45"/>
+        <div class="ml-auto px-3 py-2 h-fit rounded-md border-[#6933FF] border-1 flex gap-5 justify-center" id="navigation">
+            <a class="text-md" href="#sectionHome">
                 Home
             </a>
-            <a>
+            <a class="text-md" href="#sectionProfile">
                 Our Profile
             </a>
-            <a>
+            <a class="text-md" href="#sectionPortfolio">
                 Portfolio
             </a>
-            <a>
+            <a class="text-md" href="#sectionContact">
                 Contact Us
             </a>
         </div>
-    </nav>
-    <article>
-        <section>
-            <h1 id="headerGreet">Hi Guest, Welcome to the Website</h1>
-            <h2>Ini adalah website latihan pertama</h2>
+    </header>
+
+    <!-- main konten -->
+    <main class="flex flex-col px-24">
+        <section class="w-full h-[100vh] flex flex-col justify-center" id="sectionHome">
+            <h1 class="mt-15 text-5xl font-semibold tracking-normal w-[32rem] leading-14" id="headerGreet">Hi, <br> Ready to <span class="text-[#6933FF]">Quantum-Enhance</span> your future?</h1>
+            <div class="w-fit">
+                <h2 class="text-md w-[28rem] my-8" ><span class="text-[#6933FF]">AetherLoop Technologies</span> is a cutting-edge tech company pioneering the future of immersive connectivity through quantum-powered communication and virtual presence systems.</h2>
+                <a class="block w-fit ml-auto py-1.5 px-10 font-semibold rounded-md border-[#6933FF] text-[#6933FF] border-[1.5px] hover:bg-[#6933FF] hover:text-[#fff] transition-all" href="#sectionPortfolio" >Learn More</a>
+            </div>
         </section>
-        <section>
+        <section class="">
             <h1>Our Headquarter</h1>
             <img src="a"/>
         </section>
-        <section>
+        <section id="sectionContact">
             <h1>Contact Us</h1>
             <form id="formContactUs">
 
-                <!-- nama -->
+                <!-- input nama -->
                 <label for="inputNama">Nama<span class="text-red-700">*</span></label>
                 <label id="inputNamaError" for="inputNama" class="hidden text-red-500">ERROR</label>
                 <input id="inputNama" class="border-2 border-blue-200 rounded-sm">
 
-                <!-- tanggal lahir -->
+                <!-- input tanggal lahir -->
                 <label for="inputTglLhr">Tanggal Lahir<span class="text-red-700">*</span></label>
                 <label id="inputTglLhrError" for="inputTglLhr" class="hidden text-red-500">ERROR</label>
                 <input id="inputTglLhr" class="border-2 border-blue-200 rounded-sm" type="date">
 
-                <!-- jenis kelamin -->
+                <!-- input jenis kelamin -->
                 <label>Jenis Kelamin<span class="text-red-700">*</span></label>
                 <label id="inputKelaminError" for="inputKelamin" class="hidden text-red-500">ERROR</label>
                 <label for="inputLaki">
@@ -60,7 +66,7 @@
                     Perempuan
                 </label>
 
-                <!-- pesan -->
+                <!-- input pesan -->
                 <label for="inputPesan">Pesan<span class="text-red-700">*</span></label>
                 <label id="inputPesanError" for="inputPesan" class="hidden text-red-500">ERROR</label>
                 <textarea id="inputPesan" class="border-2 border-blue-200 rounded-sm"></textarea>
@@ -68,10 +74,12 @@
                 <input onclick="validateContactUsForm()" type="button" class="block bg-blue-200 rounded-sm p-2 cursor-pointer" value="submit">
             </form>
         </section>
-    </article>
+    </main>
+
+    <!-- footer -->
     <footer>
         <p>By Yana</p>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
