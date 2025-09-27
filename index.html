@@ -9,19 +9,19 @@
 </head>
 <body>
     <!-- header /navbar -->
-    <header class="absolute top-0 left-0 right-0 flex px-8 py-4 items-center">
-        <img src="./assets/revoulogo.svg" class="w-[30px] sm:w-[45px]"/>
-        <div class="ml-auto px-2 py-1 sm:py-1 sm:px-3 h-fit rounded-md border-[#6933FF] border-1 flex gap-2.5 sm:gap-5 justify-center" id="navigation">
-            <a class="text-xs sm:text-md hover:text-[#6933FF]" href="#sectionHome">
+    <header class="absolute top-0 left-0 right-0 flex px-8 py-4 items-center z-10">
+        <img src="./assets/logo.svg" class="w-[30px] md:w-[45px]"/>
+        <div class="ml-auto px-2 py-1 md:py-1 md:px-3 h-fit rounded-md border-[#6933FF] border-1 flex gap-2.5 md:gap-5 justify-center" id="navigation">
+            <a class="text-xs md:text-md hover:text-[#6933FF]" href="#sectionHome">
                 Home
             </a>
-            <a class="text-xs sm:text-md hover:text-[#6933FF]" href="#sectionProfile">
+            <a class="text-xs md:text-md hover:text-[#6933FF]" href="#sectionProfile">
                 Our Profile
             </a>
-            <a class="text-xs sm:text-md hover:text-[#6933FF]" href="#sectionPortfolio">
+            <a class="text-xs md:text-md hover:text-[#6933FF]" href="#sectionPortfolio">
                 Portfolio
             </a>
-            <a class="text-xs sm:text-md hover:text-[#6933FF]" href="#sectionContact">
+            <a class="text-xs md:text-md hover:text-[#6933FF]" href="#sectionContact">
                 Message Us
             </a>
         </div>
@@ -30,64 +30,82 @@
     <!-- main konten -->
     <main class="flex flex-col">
         <!-- section home -->
-        <section class="w-full h-[100vh] sm:px-24 px-8 flex flex-col justify-center" id="sectionHome">
-            <h1 id="headerGreet" class="mt-15 text-3xl sm:text-5xl font-semibold tracking-normal w-[18rem] sm:w-[32rem] leading-9 sm:leading-14">Hi, <br> Ready to <span class="text-[#6933FF]">Quantum-Enhance</span> your future?</h1>
-            <div class="w-fit">
-                <h2 class="text-sm sm:text-md w-[16rem] sm:w-[28rem] my-8" ><span class="text-[#6933FF]">AetherLoop Technologies</span> is a cutting-edge tech company pioneering the future of immersive connectivity through quantum-powered communication and virtual presence systems.</h2>
-                <a class="block w-fit ml-auto py-1.5 px-10 font-semibold rounded-md border-[#6933FF] text-[#6933FF] border-[1.5px] hover:bg-[#6933FF] hover:text-[#fff] transition-all" href="#sectionProfile" >Learn More</a>
+        <section class="relative w-full h-fit md:h-[100vh] py-12 md:py-0 md:px-24 px-8 flex flex-col md:flex-row justify-start items-center" id="sectionHome">
+            <div>
+                <h1 id="headerGreet" class="mt-15 text-3xl md:text-5xl font-semibold tracking-normal w-[18rem] md:w-[32rem] leading-9 md:leading-14">Hi, <br> Ready to <span class="text-[#6933FF]">Quantum-Enhance</span> your future?</h1>
+                <div class="w-fit">
+                    <h2 class="text-sm md:text-md w-[16rem] md:w-[28rem] my-8" >
+                        <img src="./assets/logo.svg" class="w-fit h-[.85rem] inline-block"/>
+                        <span class="text-[#6933FF]">AetherLoop Technologies</span>
+                         is a cutting-edge tech company pioneering the future of immersive connectivity through quantum-powered communication and virtual presence systems.
+                    </h2>
+                    <a class="block w-fit ml-auto py-1.5 px-10 font-semibold rounded-md border-[#6933FF] text-[#6933FF] border-[1.5px] hover:bg-[#6933FF] hover:text-[#fff] transition-all" href="#sectionProfile" >Learn More</a>
+                </div>
             </div>
+            <img src="./assets/banner.png" class="md:absolute w-full md:w-fit md:h-full right-0 -z-[1]">
         </section>
 
         <!-- section about -->
-        <section class="flex flex-col sm:px-24 px-8 h-fit py-25 sm:py-0 sm:h-[100vh] bg-[#6933FF] text-white justify-center" id="sectionProfile">
-            <h1 class="opposite-sel mb-15 w-full text-center text-4xl sm:text-5xl font-semibold tracking-normal leading-9 sm:leading-14">“Beyond Distance. Beyond Time.”</h1>
-            <div class="w-full flex flex-col sm:flex-row justify-center items-center gap-10">
+        <section class="flex flex-col md:px-24 px-8 h-fit py-25 md:py-0 md:h-[100vh] bg-[#6933FF] text-white justify-center" id="sectionProfile">
+            <h1 class="opposite-sel mb-15 w-full text-center text-3xl md:text-4xl font-semibold tracking-normal leading-9 md:leading-14">“Beyond Distance. Beyond Time.”</h1>
+            <div class="w-full flex flex-col md:flex-row justify-center items-center md:items-start gap-10">
                 <div class="w-fit flex flex-col items-center">
-                    <img src="./assets/star.svg">
-                    <h1 class="opposite-sel mx-auto text-3xl font-semibold tracking-normal w-full text-center leading-14">Innovative</h1>
+                    <img src="./assets/logow.svg" class="w-[8rem]">
+                    <h1 class="opposite-sel mx-auto text-2xl font-semibold tracking-normal w-full text-center leading-14">Innovative</h1>
                     <p class="opposite-sel w-[12rem] text-center">Innovating next-generation communication platforms that integrate quantum technologies.</p>
                 </div>
-                <div class="bg-white w-full sm:w-[1.25px] h-[1px] sm:h-full"></div>
+                <div class="bg-white w-full md:w-[1.5px] h-[1px] md:h-full"></div>
                 <div class="w-fit flex flex-col items-center">
-                    <img src="./assets/star.svg">
-                    <h1 class="opposite-sel mx-auto text-3xl font-semibold tracking-normal w-full text-center leading-14">Accessible</h1>
+                    <img src="./assets/accessible.svg" class="w-[4.25rem]">
+                    <h1 class="opposite-sel mx-auto text-2xl font-semibold tracking-normal w-full text-center leading-14">Accessible</h1>
                     <p class="opposite-sel w-[12rem] text-center">Empowering global communities with seamless access to real-time virtual presence, regardless of location.</p>
                 </div>
-                <div class="bg-white w-full sm:w-[1.25px] h-[1px] sm:h-full"></div>
+                <div class="bg-white w-full md:w-[1.5px] h-[1px] md:h-full"></div>
                 <div class="w-fit flex flex-col items-center">
-                    <img src="./assets/star.svg">
-                    <h1 class="opposite-sel mx-auto text-3xl font-semibold tracking-normal w-full text-center leading-14">Applicable</h1>
+                    <img src="./assets/applicable.svg" class="w-[4.25rem]">
+                    <h1 class="opposite-sel mx-auto text-2xl font-semibold tracking-normal w-full text-center leading-14">Applicable</h1>
                     <p class="opposite-sel w-[12rem] text-center">Bridging physical and digital worlds to redefine work, education, and human connection.</p>
                 </div>
-                <div class="bg-white w-full sm:w-[1.25px] h-[1px] sm:h-full"></div>
+                <div class="bg-white w-full md:w-[1.5px] h-[1px] md:h-full"></div>
                 <div class="w-fit flex flex-col items-center">
-                    <img src="./assets/star.svg">
-                    <h1 class="opposite-sel mx-auto text-3xl font-semibold tracking-normal w-full text-center leading-14">User-Friendly</h1>
+                    <img src="./assets/userfriendly.svg" class="w-[4.25rem]">
+                    <h1 class="opposite-sel mx-auto text-2xl font-semibold tracking-normal w-full text-center leading-14">User-Friendly</h1>
                     <p class="opposite-sel w-[12rem] text-center">Ensuring our technologies are developed with ethical frameworks, privacy protection, and sustainability in mind.</p>
                 </div>
             </div>
-            <h2 class="opposite-sel mt-[5rem] w-full text-center font-semibold text-lg">Our Vision is to reshape how humanity connect, communicate, and collaborate <br> unbounded by physical limitations or temporal delays.</h2>
+            <h2 class="opposite-sel mt-[3rem] w-full text-center font-semibold text-lg">Our Vision is to reshape how humanity connect, communicate, and collaborate <br> unbounded by physical limitations or temporal delays.</h2>
         </section>
 
         <!-- section portfolio -->
-        <section class="flex flex-col sm:px-24 px-8 h-[100vh] justify-center" id="sectionPortfolio">
-            <h1 class="w-fit text-5xl font-semibold tracking-normal leading-14 text-[#6933FF]">Portfolio:<br>Our Impact</h1>
-            <h2 class="mt-4 w-fit text-lg">
+        <section class="flex flex-col md:px-24 px-8 h-[100vh] justify-center" id="sectionPortfolio">
+            <h1 class="w-fit text-4xl md:text-5xl font-semibold tracking-normal leading-10 md:leading-14 text-[#6933FF]">Portfolio:<br>Our Impact</h1>
+            <h2 class="mt-4 w-fit text-sm md:text-lg">
                 <span class="font-semibold">Our systems are already revolutionizing industries</span><br>
                 from remote healthcare and education to interplanetary communication.
             </h2>
-            <div class="w-full">
-                <!-- photos -->
+            <div class="w-full pt-8 flex flex-col gap-4 items-center">
+                <div class="w-fit">
+                    <h1 class="text-xl md:text-2xl font-semibold">QuantumLink Connect &mdash; 2035</h1>
+                    <p class="w-full md:w-[56rem] text-xs tracking-wide md:tracking-normal md:text-lg">Our flagship product, QuantumLink Connect, delivers ultra-secure, near-instantaneous communication through quantum entanglement protocols. Already adopted by universities, it enables immersive global classrooms where students feel physically present with their peers and mentors.</p>
+                </div>
+                <div class="w-fit">
+                    <h1 class="text-xl md:text-2xl font-semibold">AetherPresence Hub &mdash; 2040</h1>
+                    <p class="w-full md:w-[56rem] text-xs tracking-wide md:tracking-normal md:text-lg">Expanding beyond communication, AetherPresence Hub introduces full-sensory virtual presence systems. Professionals can collaborate in lifelike 3D workspaces, families can share moments across continents, and artists can perform in real-time across the globe.</p>
+                </div>
+                <div class="w-fit">
+                    <h1 class="text-xl md:text-2xl font-semibold">Interplanetary Relay Network &mdash; 2047</h1>
+                    <p class="w-full md:w-[56rem] text-xs tracking-wide md:tracking-normal md:text-lg">Pioneering humanity’s leap into space, AetherLoop presents, the Interplanetary Relay Network: a resilient quantum-powered mesh enabling instant communication between Earth, Mars, and beyond. This system will be the foundation for a truly interconnected solar civilization.</p>
+                </div>
             </div>
         </section>
 
         <!-- section contact us -->
-        <section class="flex flex-col sm:px-24 px-8 h-[100vh] justify-center items-center" id="sectionContact">
-            <h1 class="w-fit text-5xl font-semibold tracking-normal leading-14 text-[#6933FF]">
+        <section class="flex flex-col md:px-24 px-8 h-[100vh] justify-center items-center" id="sectionContact">
+            <h1 class="w-fit text-3xl md:text-5xl font-semibold tracking-normal leading-14 text-[#6933FF]">
                 Message Us
                 <span class="text-sm font-normal text-black"><span class="text-red-500">* </span>mandatory</span>
             </h1>
-            <form id="formContactUs" class="w-full sm:w-[32rem] flex flex-col gap-3">
+            <form id="formContactUs" class="w-full md:w-[32rem] flex flex-col gap-3">
 
                 <!-- input nama -->
                 <div>
@@ -132,7 +150,7 @@
 
     <!-- footer -->
     <footer class="w-full h-[4rem] border-t-1 text-[#6933FF] border-[#6933FF] flex flex-col justify-center">
-        <p class="w-full text-center text-xs sm:text-lg">&copy; 2025 I Wayan Widhyadana SG Practice, All rights reserved.</p>
+        <p class="w-full text-center text-xs md:text-lg">&copy; 2025 I Wayan Widhyadana SG Practice, All rights reserved.</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>
