@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Pertama RevoU Mini Project</title>
+    <title>RevoU CCSE Mini Project: Fictional Company</title>
+    <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css -->
     <link rel="stylesheet" href="./css//style.css">
 </head>
 <body>
     <!-- header /navbar -->
     <header class="absolute top-0 left-0 right-0 flex px-8 py-4 items-center z-10">
+        <!-- logo -->
         <img src="./assets/logo.svg" class="w-[30px] md:w-[45px]"/>
+        <!-- navigation -->
         <div class="ml-auto px-2 py-1 md:py-1 md:px-3 h-fit rounded-md border-[#6933FF] border-1 flex gap-2.5 md:gap-5 justify-center" id="navigation">
             <a class="text-xs md:text-md hover:text-[#6933FF]" href="#sectionHome">
                 Home
@@ -32,6 +36,7 @@
         <!-- section home -->
         <section class="relative w-full h-fit md:h-[100vh] py-12 md:py-0 md:px-24 px-8 flex flex-col md:flex-row justify-start items-center" id="sectionHome">
             <div>
+                <!-- selamat datang -->
                 <h1 id="headerGreet" class="mt-15 text-3xl md:text-5xl font-semibold tracking-normal w-[18rem] md:w-[32rem] leading-9 md:leading-14">Hi, <br> Ready to <span class="text-[#6933FF]">Quantum-Enhance</span> your future?</h1>
                 <div class="w-fit">
                     <h2 class="text-sm md:text-md w-[16rem] md:w-[28rem] my-8" >
@@ -42,6 +47,7 @@
                     <a class="block w-fit ml-auto py-1.5 px-10 font-semibold rounded-md border-[#6933FF] text-[#6933FF] border-[1.5px] hover:bg-[#6933FF] hover:text-[#fff] transition-all" href="#sectionProfile" >Learn More</a>
                 </div>
             </div>
+            <!-- hero banner -->
             <img src="./assets/banner.png" class="md:absolute w-full md:w-fit md:h-full right-0 -z-[1]">
         </section>
 
@@ -78,21 +84,22 @@
 
         <!-- section portfolio -->
         <section class="flex flex-col md:px-24 px-8 h-[100vh] justify-center" id="sectionPortfolio">
-            <h1 class="w-fit text-4xl md:text-5xl font-semibold tracking-normal leading-10 md:leading-14 text-[#6933FF]">Portfolio:<br>Our Impact</h1>
+            <h1 class="w-fit text-3xl md:text-5xl font-semibold tracking-normal leading-10 md:leading-14 text-[#6933FF]">Portfolio: Our Impact</h1>
             <h2 class="mt-4 w-fit text-sm md:text-lg">
                 <span class="font-semibold">Our systems are already revolutionizing industries</span><br>
                 from remote healthcare and education to interplanetary communication.
             </h2>
-            <div class="w-full pt-8 flex flex-col gap-4 items-center">
-                <div class="w-fit">
+            <!-- portfolios -->
+            <div class="w-full pt-4 flex flex-col gap-4 items-center">
+                <div class="w-fit rounded-lg bg-[#6933FF22] px-4 py-2">
                     <h1 class="text-xl md:text-2xl font-semibold">QuantumLink Connect &mdash; 2035</h1>
                     <p class="w-full md:w-[56rem] text-xs tracking-wide md:tracking-normal md:text-lg">Our flagship product, QuantumLink Connect, delivers ultra-secure, near-instantaneous communication through quantum entanglement protocols. Already adopted by universities, it enables immersive global classrooms where students feel physically present with their peers and mentors.</p>
                 </div>
-                <div class="w-fit">
+                <div class="w-fit rounded-lg bg-[#6933FF22] px-4 py-2">
                     <h1 class="text-xl md:text-2xl font-semibold">AetherPresence Hub &mdash; 2040</h1>
                     <p class="w-full md:w-[56rem] text-xs tracking-wide md:tracking-normal md:text-lg">Expanding beyond communication, AetherPresence Hub introduces full-sensory virtual presence systems. Professionals can collaborate in lifelike 3D workspaces, families can share moments across continents, and artists can perform in real-time across the globe.</p>
                 </div>
-                <div class="w-fit">
+                <div class="w-fit rounded-lg bg-[#6933FF22] px-4 py-2">
                     <h1 class="text-xl md:text-2xl font-semibold">Interplanetary Relay Network &mdash; 2047</h1>
                     <p class="w-full md:w-[56rem] text-xs tracking-wide md:tracking-normal md:text-lg">Pioneering humanity’s leap into space, AetherLoop presents, the Interplanetary Relay Network: a resilient quantum-powered mesh enabling instant communication between Earth, Mars, and beyond. This system will be the foundation for a truly interconnected solar civilization.</p>
                 </div>
@@ -150,8 +157,10 @@
 
     <!-- footer -->
     <footer class="w-full h-[4rem] border-t-1 text-[#6933FF] border-[#6933FF] flex flex-col justify-center">
-        <p class="w-full text-center text-xs md:text-lg">&copy; 2025 I Wayan Widhyadana SG Practice, All rights reserved.</p>
+        <a href="https://github.com/kelloverra" target="_blank" class="w-full text-center text-xs md:text-lg">&copy; 2025 I Wayan Widhyadana SG Practice, All rights reserved.</a>
     </footer>
+
+    <!-- linking js script -->
     <script src="./js/script.js"></script>
 </body>
 </html>

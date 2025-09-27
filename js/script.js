@@ -1,8 +1,8 @@
 
 var namaUser = "";
 document.addEventListener('DOMContentLoaded', function () {
-    namaUser = prompt('Enter your name: ','');
-    namaUser = namaUser.trim().length > 0 ? ` ${namaUser}`.slice(0,15) : '';
+    namaUser = prompt('Enter your name: (15 Characters)','');
+    namaUser = namaUser.trim().length > 0 ? ` ${namaUser}`.slice(0,16) : '';
     document.getElementById('headerGreet').innerHTML = `Hi${namaUser}, <br> Ready to <span class="text-[#6933FF]">Quantum-Enhance</span> your future?`;
 })
 
